@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Owner:</b>
+  <%= @box.user_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @box.name %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @box.picture %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @box.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_box_path(@box) %> |
+<%= link_to 'Back', boxes_path %>
